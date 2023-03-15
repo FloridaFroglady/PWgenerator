@@ -18,12 +18,15 @@ function generatePassword() {
      if (char < minChar || char > maxChar) {
       confirm(
         "Your password must be between 8 and 128 characters.  Please try again."
+        
       );
+      return;
     } else {
       //prompt returns a string
     Number(char);
+  
     }
-
+ 
     //prompt lowercase
     //generate lowercase from string using random method on indices
     var lower = confirm("Do you wish to include lowercase letters?");
@@ -64,12 +67,12 @@ function generatePassword() {
 
     //validate input--check that entries are valid
     if (!lower && !upper && !num && !spec) {
-      alert("You must make at least one choice of character type.");
+      confirm("You must make at least one choice of character type."); 
     }
     //generate password
     for (var i = password.length; i < char; i++) {
       if(charType) {
-      var chars = charType.join("").split("")
+      var chars = charType.join("")
       chars[Math.floor(Math.random() * char)];
       password.push(chars[i]);
       }
