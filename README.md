@@ -11,4 +11,10 @@ She also condensed some of my logic from multiple into single lines and suggeste
 This application should take input from the user to generate a random password from 8-128 characters in length. 
 It should prompt the user for the desired length and type of characters (lowercase, uppercase, special, numbers). 
 It should then display the generated password in the box on the page. 
-It should check that the input for length is between 8 and 128 and that at least one character type was chosen. 
+It should check that the input for length is between 8 and 128 and that at least one character type was chosen.
+
+
+![Screenshot 2023-03-15 at 14-18-57 Password Generator](https://user-images.githubusercontent.com/73851188/225405740-a9363347-03c3-4b68-ac22-545ced153818.png)
+
+
+https://floridafroglady.github.io/PWgenerator/
